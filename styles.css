@@ -1,60 +1,124 @@
+/* Estilos Globais */
 body {
-    color: white;
-    background: black;
-    margin: 0px;
-    font-family: "Chakra Petch", sans-serif;
-    margin-bottom: 100px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
+h1, h2 {
+    margin: 0;
+}
+
+/* Cabeçalho */
 header {
-    border-bottom: solid 2px rgb(255, 255, 255);
-    padding: 20px;
-    font-size: 32px;
-    color: rgb(255, 0, 0);
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.chamada {
-    background: rgb(255, 55, 55);
-    padding-bottom: 80px;
-    padding-top: 80px;
+header h1 {
+    font-size: 36px;
+}
+
+/* Navegação */
+nav {
     display: flex;
     justify-content: center;
+    background-color: #333;
+    padding: 10px;
 }
 
-.chamada-texto {
-    margin-right: 5%;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
 }
 
-h1 {
-    font-size: 40px;
+nav a:hover {
+    text-decoration: underline;
 }
 
-p {
-    font-size: 20px;
-}
-
-.categoria-videos {
+/* Hero Section */
+.hero {
+    background-image: url('https://koenigseggdev.blob.core.windows.net/drupal/styles/1920x1400/azure/2022-03/Koenigsegg%20Jesko%20Absolut%20Header%20V3.png?h=6ca15b42&itok=gnzttTIF');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
     display: flex;
-    overflow-x: auto;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
-.categoria {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 50px;
+.hero h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.categoria-videos img {
-    opacity: 0.5;
-    height: 200px;
+/* Container Principal */
+.container {
+    padding: 20px;
 }
 
-.categoria-videos img:hover {
-    opacity: 1.0;
-    border: 3px solid rgb(130, 0, 0);
+.container h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.categoria h2 {
-    color: rgb(255, 0, 0);
+/* Galeria de Carros */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Seção Sobre */
+.about {
+    background-color: #222;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
